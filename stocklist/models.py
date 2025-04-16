@@ -8,5 +8,8 @@ class Product(models.Model):
     inventory_quantity = models.IntegerField()
     size = models.IntegerField()
 
+    class Meta:
+        ordering = ['id']
+
     def __str__(self):
         return self.title
